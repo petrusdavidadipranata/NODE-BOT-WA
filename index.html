@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>WhatsApp OTP Verification</h2>
+
+        <label>Nomor WhatsApp:</label>
+        <input type="text" id="phone" placeholder="628XXXXXXXXXX" maxlength="13">
+
+        <button id="sendOTPButton" onclick="sendOTP()">Kirim OTP</button>
+
+        <div id="otpSection" style="display: none;">
+            <label>Masukkan OTP:</label>
+            <input type="text" id="otp">
+            <button onclick="verifyOTP()">Verifikasi OTP</button>
+        </div>
+
+        <p id="message"></p>
+        <p id="timer"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
